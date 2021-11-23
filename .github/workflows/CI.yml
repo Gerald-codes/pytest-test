@@ -10,7 +10,7 @@ jobs:
     steps:
      - uses: actions/setup-python@v2
        with:
-         python-version:3.8
+         python-version: 3.8
      - name: Install Libraries
        run: |
          pip install flake8 pytest pytest-cov
@@ -19,12 +19,12 @@ jobs:
        with:
          repository: gerald-codes/pytest-test
      - name: Checkout Test Script
-     uses: actions/checkout@v2
-     with:
-       repository: lowkh2/DevOpsQARepo
-       path: tests
-       token: ${{ secrets.QA_REMOTE_TEST }}
+       uses: actions/checkout@v2
+       with:
+         repository: lowkh2/DevOpsQARepo
+         path: tests
+         token: ${{ secrets.QA_REMOTE_TEST }}
      - name: Begin PyTest
        run: |
-         mv ./tests/*.* ./
-         pytest --cov
+        mv ./tests/*.* ./
+        pytest --cov
