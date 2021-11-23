@@ -1,4 +1,4 @@
-- name: CI for HelloWorld
+name: CI for HelloWorld
  
  on:
   push:
