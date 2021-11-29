@@ -18,7 +18,7 @@ jobs:
     - name: Checkout Own Repo
       uses: actions/checkout@v2
       with: 
-        repository: Gerald-codes/pytest-test
+        repository: gerald-codes/pytest-test
     - name: Checkout Test Script
       uses: actions/checkout@v2
       with:
