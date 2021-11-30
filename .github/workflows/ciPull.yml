@@ -37,7 +37,7 @@ jobs:
             l_max_size: '1000'
             exclude_files: '.txt'
        env:
-          github_token: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
      - name: Begin PyTest
        run: |
         mv ./tests/*.* ./
