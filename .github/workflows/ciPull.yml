@@ -31,10 +31,10 @@ jobs:
      - name: Label the PR Size
        uses: coverwallet/pr-labeler@v1.2.1
        with:
-            xs_max_size = '10'
-            s_max_size = '100'
-            m_max_size = '500'
-            l_max_size = '1000'
+            xs_max_size: '10'
+            s_max_size: '100'
+            m_max_size: '500'
+            l_max_size: '1000'
             exclude_files: '.txt'
        env:
           github_token: ${{secrets.GITHUB_TOKEN}}
